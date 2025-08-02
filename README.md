@@ -1,0 +1,1 @@
+Ye Nothing really works except for the shorten link thingy. All the other buttons are just useless for aesthetics. Also i got bored by the end so just skipped the footer thingy. Got the Design from FrontendMentor.
