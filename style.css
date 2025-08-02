@@ -118,7 +118,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/images/bg-shorten-desktop.svg) no-repeat;
+  background: url(images/bg-shorten-desktop.svg) no-repeat;
   background-size: cover;
   border-radius: inherit;
   gap: 1rem;
@@ -239,7 +239,7 @@ body {
 }
 .before-footer-section .before-footer {
   padding: 4rem 0;
-  background: url(/images/bg-boost-desktop.svg) no-repeat;
+  background: url(images/bg-boost-desktop.svg) no-repeat;
   background-size: cover;
 }
 .before-footer-section .before-footer .container {
@@ -306,7 +306,7 @@ footer .footer a {
     gap: 4rem;
   }
   .before-footer-section .before-footer {
-    background: url(/images/bg-boost-mobile.svg) no-repeat;
+    background: url(images/bg-boost-mobile.svg) no-repeat;
     background-size: cover;
   }
 }

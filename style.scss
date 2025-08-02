@@ -132,7 +132,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(/images/bg-shorten-desktop.svg) no-repeat;
+        background: url(images/bg-shorten-desktop.svg) no-repeat;
         background-size: cover;
         border-radius: inherit;
         gap: 1rem;
@@ -252,7 +252,7 @@ body {
     background: $Purple950;
     .before-footer {
     padding: 4rem 0;
-            background: url(/images/bg-boost-desktop.svg) no-repeat;
+            background: url(images/bg-boost-desktop.svg) no-repeat;
             background-size: cover;
         .container {
             max-width: $MaxWidth;
@@ -328,7 +328,7 @@ footer {
     }
     .before-footer-section {
         .before-footer {
-            background: url(/images/bg-boost-mobile.svg) no-repeat;
+            background: url(images/bg-boost-mobile.svg) no-repeat;
             background-size: cover;
         }
     }
