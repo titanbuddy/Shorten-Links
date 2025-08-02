@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+//colors
+
+
+$Blue400: hsl(180, 66%, 49%);
+$Purple950: hsl(257, 27%, 26%);
+$Red400: hsl(0, 87%, 67%);
+
+$Gray400: hsl(0, 0%, 85%);
+$Gray500: hsl(257, 7%, 63%);
+$Gray900: hsl(255, 11%, 22%);
+$Gray950: hsl(260, 8%, 14%);
+$MaxWidth: 1280px;
+$FontSize: 1rem;
+//BODY
+
+body {
+    font-size: $FontSize;
+    overflow-x: hidden;
+}
+//NAVBARRRRRRRR
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $MaxWidth;
+    margin: auto;
+    gap: 3rem;
+    padding: 1.6rem 1rem;
+    .links {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        a {
+            text-decoration: none;
+            color: $Gray500;
+            font-weight: 700;
+            transition: color .2s ease-in;
+            &:hover {
+                color: $Gray950;
+            }
+        }
+    }
+    .nav-btns {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        a {
+            text-decoration: none;
+        }
+        .login-nav {
+            color: $Gray400;
+        }
+        .signup-nav {
+            background-color: $Blue400;
+            color: white;
+            padding: .5rem 2rem;
+            border-radius: 999px;
+        }
+    }
+    .burger {
+        display: none;
+        ion-icon {
+            display: block;
+            font-size: 2.2rem;
+        }
+    }
+}
+
+
+.hero {
+    display: flex;
+    max-width: $MaxWidth;
+    padding: 0 1rem;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40rem;
+    gap: 4.5rem;
+    .hero-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        h1 {
+            font-size: 3.8rem;
+            line-height: 110%;
+            font-weight: 700;
+        }
+        p {
+            color: #32313f;
+        }
+        .hero-btn {
+            margin-top: 1rem;
+            background: $Blue400;
+            text-decoration: none;
+            padding: .8rem 2rem;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+    .hero-right {
+        flex: 1;
+        img {
+           max-width: 100%;
+            float: right;
+        }
+    }
+}
+.shorten-url-section {
+   margin-top: 4rem;
+   background: linear-gradient(to bottom,white 50%, $Gray400 50%);
+    padding: 0 1rem;
+}
+.shorten-url {
+    max-width: $MaxWidth;
+    margin: auto;
+    background: $Purple950;
+    position: relative;
+    border-radius: 8px;
+    .shorten {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(/images/bg-shorten-desktop.svg) no-repeat;
+        background-size: cover;
+        border-radius: inherit;
+        gap: 1rem;
+    padding: 3rem 2rem;
+        
+        input {
+            width: 80%;
+            padding: 1rem .7rem;
+            border-radius: 5px;
+            border: 0;
+            outline: none;
+
+            &::placeholder {
+                font-weight: 400;
+                font-size: .8rem;
+            }
+        }
+        .submit-shorten {
+            padding: 1rem 2rem;
+            cursor: pointer;
+            white-space: nowrap;
+            border-radius: 5px;
+            border: 0;
+            background: $Blue400;
+            color: #fff;
+        }
+    }
+}
+.new-links-section {
+    background: $Gray400;
+    padding: 0 1rem;
+}
+.new-links {
+    max-width: $MaxWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: column;    
+    gap: 1rem;
+    padding: .5rem 0;
+
+    .link-1 {
+        background-color: #fff;
+        padding: .6rem .8rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 1px 1px 6px rgba(0,0,0,.3);
+        div {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            span {
+                color: $Blue400;
+            }
+        }
+        a {
+            text-decoration: none;
+            padding: .7rem 2rem;
+            background: $Blue400;
+            color: #Fff;
+            border-radius: 4px;
+
+        }
+    }
+}
+.statics-section {
+    background: $Gray400;
+    padding: 8rem 1rem;
+}
+.statics {
+    max-width: $MaxWidth;
+    margin: auto;
+    .stat-title {
+        text-align: center;
+        font-size: 3.4rem;
+    }
+    .stat-desc {
+        text-align: center;
+        width: 35ch;
+        color: $Gray500;
+        margin: auto;
+        line-height: 140%;
+    }
+    .statics-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 5rem 0;
+        div {
+            position: relative;
+            background: #fff;
+            padding: 5rem 2.3rem 2.3rem 2.3rem;
+            img {
+                position: absolute;
+                background: $Purple950;
+                padding: 1.3rem;
+                top: -42px;
+                clip-path: circle();
+                // left: 50%;
+                // transform: translateX(-50%);
+            }
+            p {
+            font-size: .9rem;
+            margin-top: 12px;
+            }
+            
+        }
+    }
+}
+.display-show {
+    display: flex !important; 
+}
+
+
+.before-footer-section {
+    background: $Purple950;
+    .before-footer {
+    padding: 4rem 0;
+            background: url(/images/bg-boost-desktop.svg) no-repeat;
+            background-size: cover;
+        .container {
+            max-width: $MaxWidth;
+            margin: auto;
+            text-align: center;
+            h2 {
+                color: #fff;
+                font-weight: 700;
+                font-size: 3rem;
+            }
+            .before-footer-btn {
+                display: inline-block;
+                margin-top: 12px;
+                text-decoration: none;
+                padding: .8rem 2rem;
+                background: $Blue400;
+                color: #fff;
+                border-radius: 1000px;
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: #232027;
+    padding: 2rem 1rem;
+    color: #fff;
+    .footer {
+        display: flex;
+        max-width: $MaxWidth;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+@media screen and (width <= 820px){
+    footer {
+        .footer {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+    .navbar {
+        .links {
+            display: none;
+        }
+        .nav-btns {
+            display: none;
+        }
+        .burger {
+            display: flex;
+        }
+    }
+    .hero {
+        flex-direction: column;
+        .hero-left {
+            order: 2;
+        }
+    }
+     .statics {
+    .statics-cards {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+        }
+    }
+    .before-footer-section {
+        .before-footer {
+            background: url(/images/bg-boost-mobile.svg) no-repeat;
+            background-size: cover;
+        }
+    }
+}
+ @media screen and (width > 820px){
+   
+    
+    .card {
+         position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 34px;
+            height: 7px;
+            background: $Blue400;
+            top: 50%;
+            right: -34px;
+            transform: translateY(-50%);
+        }
+    }
+    .card2 {
+        transform: translateY(40px);
+       
+    }
+    .card3 {
+                transform: translateY(80px);
+        &::after {
+            display: none;
+        }
+    }
+ }
+
+
+.color-change {
+    background: $Purple950 !important;
+}
